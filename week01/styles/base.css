@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #395a80; /* Azul oscuro estilo BYU */
+    --secondary-color: #2b6cb0;
+    --background-color: #f4f6f8;
+    --card-background: #ffffff;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    background-color: #182225;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+section.card {
+    background-color: var(--card-background);
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+section.card h2 {
+    color: white;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;    
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid #cbd5e0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.about-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about-container p {
+    flex: 1;
+    margin: 0;
+}
+
+.about-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+}
+
+section.card section {
+    margin-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+}
+
+section.card section h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.country-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.country-container img {
+    width: 120px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+section.card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+section.card ul li {
+    margin-bottom: 0.6rem;
+}
+
+section.card ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+section.card ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    color: #d1d5db;
+}
