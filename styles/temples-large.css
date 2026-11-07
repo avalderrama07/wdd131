@@ -1,0 +1,33 @@
+@media screen and (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+    
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.2rem 2rem;
+    }
+    nav {
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    nav a {
+        width: auto;
+    }
+
+    .album-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+}
