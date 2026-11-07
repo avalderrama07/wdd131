@@ -4,6 +4,7 @@
     --background-color: #f9f9f9;
     --text-color: #333333;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -67,12 +68,12 @@ nav a:hover {
     right: 1.5rem;
 }
 
-#menu::before { 
-    content: '☰'; 
+#menu::before {
+    content: '☰';
 }
 
-#menu.open::before { 
-    content: '✖'; 
+#menu.open::before {
+    content: '✖';
 }
 
 .nav-links {
@@ -82,6 +83,7 @@ nav a:hover {
     align-items: center;
     gap: 0.5rem;
 }
+
 .nav-links.open {
     display: flex;
 }
@@ -106,23 +108,23 @@ main h2 {
 }
 
 figure {
-   border: 1px solid #ddd;
-   border-radius: 8px;
-   overflow: hidden;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 figure img {
-   width: 100%;
-   height: auto;
-   display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 figcaption {
-   padding: 0.5rem;
-   color: var(--primary-color);
-   font-weight: 500;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 footer {
