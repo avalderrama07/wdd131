@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perú</title>
+    <meta name="description" content="Page with information about Peru.">
+    <meta name="author" content="Aron Valderrama">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Perú</h1>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt="Peru Lanscape" width="500" height="750">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><span class="label">Area:</span> <span class="value">1,285,216 km²</span></li>
+                <li><span class="label">Population:</span> <span class="value">32,971,854</span></li>
+                <li><span class="label">Capital:</span> <span class="value">Lima</span></li>
+                <li><span class="label">Language:</span> <span class="value">Spanish</span></li>
+                <li><span class="label">Currency:</span> <span class="value">Peruvian Sol (PEN)</span></li>
+                <li><span class="label">Time Zone:</span> <span class="value">UTC-5</span></li>
+                <li><span class="label">Calling Code:</span> <span class="value">+51</span></li>
+                <li><span class="label">Internet TLD:</span> <span class="value">.pe</span></li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/partly-cloudy.svg" alt="Weather Icon" class="weather-icon" width="50" height="50">
+            <ul>
+                <li><span class="label">Temperature:</span> <span class="value">26 °C</span></li>
+                <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+                <li><span class="label">Wind:</span> <span class="value">14 km/h</span></li>
+                <li><span class="label">Wind Chill:</span> <span class="value" id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &bull; Aron Valderrama &bull; Perú</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
