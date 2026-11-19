@@ -112,7 +112,7 @@ footer p {
         display: none;
     }
 
-    .weather-icon::after {
+    .weather h2::after {
         content: "⛅";
     }
 
