@@ -4,7 +4,7 @@
     }
     
     .nav-links {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         width: auto;
         gap: 1rem;
